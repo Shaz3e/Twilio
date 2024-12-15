@@ -3,6 +3,7 @@
 ![Packagist Version](https://img.shields.io/packagist/v/shaz3e/twilio)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/shaz3e/twilio)
 ![License](https://img.shields.io/packagist/l/shaz3e/twilio)
+![Lint Status](https://github.com/Shaz3e/forexbackoffice/actions/workflows/lint.yml/badge.svg)
 ![Laravel Version](https://img.shields.io/badge/laravel-11.x-blue)
 
 ## Introduction
