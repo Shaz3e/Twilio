@@ -1,6 +1,5 @@
 {
     "name": "shaz3e/twilio",
-    "version": "1.0.0",
     "description": "Send SMS with Twilio in your Laravel Application",
     "type": "library",
     "require": {
