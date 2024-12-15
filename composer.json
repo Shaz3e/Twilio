@@ -1,0 +1,32 @@
+{
+    "name": "shaz3e/twilio",
+    "version": "1.0.0",
+    "description": "Send SMS with Twilio in your Laravel Application",
+    "type": "library",
+    "require": {
+        "twilio/sdk": "^8.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shaz3e\\Twilio\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shaz3e\\Twilio\\Providers\\TwilioServiceProvider"
+            ],
+            "aliases": {
+                "LaraTwilio": "Shaz3e\\Twilio\\Facades\\Twilio"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Shahrukh Akhtar",
+            "email": "iam@shaz3e.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
