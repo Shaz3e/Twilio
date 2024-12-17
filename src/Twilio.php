@@ -21,4 +21,12 @@ class Twilio
             'body' => $message,
         ]);
     }
+
+    public function notifyWhatsApp(string $number, string $message)
+    {
+        return $this->client->messages->create('whatsapp:'.$number, [
+            'from' => 'whatsapp:'.config('twilio.twilio_from'),
+            'body' => $message,
+        ]);
+    }
 }

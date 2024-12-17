@@ -3,7 +3,6 @@
 ![Packagist Version](https://img.shields.io/packagist/v/shaz3e/twilio)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/shaz3e/twilio)
 ![License](https://img.shields.io/packagist/l/shaz3e/twilio)
-![Lint Status](https://github.com/Shaz3e/forexbackoffice/actions/workflows/lint.yml/badge.svg)
 ![Laravel Version](https://img.shields.io/badge/laravel-11.x-blue)
 
 ## Introduction
@@ -41,7 +40,7 @@ TWILIO_AUTH_TOKEN=xxxxx
 TWILIO_SMS_FROM=+xxxxx
 
 #### Usage
-To send a SMS message, you can use the notify() method available on the LaraTwilio Facade
+To send a SMS message, you can use the notify() method available on the Twilio Facade
 
 ```
 <?php
@@ -52,7 +51,16 @@ $sendSms = Twilio::notify('+123456789', 'Hello')
 
 return $sendSms;
 ```
+To send WhatsAp message you can use the notifyWhatsApp method available on the Twilio Facade
+```
+<?php
 
+use Shaz3e\Twilio\Facades\Twilio;
+
+$sendWhatsApp = Twilio::notifyWhatsApp('+123456789', 'Hello')
+
+return $sendWhatsApp;
+```
 
 
 #### Contributing
